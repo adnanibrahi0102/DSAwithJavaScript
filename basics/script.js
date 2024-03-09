@@ -44,12 +44,59 @@ const isPalindrome=(num)=>{
     let reversedNumber=0;
 
     while(num>0){
-        const digit=num%10 ; //removes last digit from number
+        const digit=num%10 ; //removes last digit from num
         reversedNumber=reversedNumber*10+digit; //Adds calculation to the ones place of reversedNumber.
         num=Math.floor(num/10);//Removes the last digit from number.
     }
     return originalNumber==reversedNumber;
 }
-console.log(isPalindrome(121))
+// console.log(isPalindrome(121))
 
 
+// question 5:Fibbonacci series
+
+function fibonacci(num){
+   //0 1 1 2 3 5 8 13
+   if(num<2){
+    return  num;
+   }
+  let prev=0;
+  let current=1;
+  let next;
+   for(let i=2;i<=num;i++){
+    next =prev+current; //upadting next
+    prev=current; //updating prev
+    current=next; //updating current
+   }
+   return next;
+}
+console.log(fibonacci(150))
+
+// const fibb=(num)=>{
+//   if(num<2){
+//     return num;
+//   }
+//   let prev=0;
+//   let current=1;
+//   let next;
+//   let i=2;
+
+//   while(i<=num){
+//     next =prev +current;
+//     prev=current;
+//     current=next;
+//     i++;
+//   }
+//   return next;
+// }
+
+// console.log(fibb(6))
+const num=[1,2,3,5];
+function findMissingNumber(num){
+  let sum=0;
+  for(let i=0;i<num.length;i++){
+    sum =sum+num[i];
+  }
+  return num.length*(num.length+1)/2-sum;
+}
+  // return num.length*(num.length+1)/2-num.reduce((acc,curr)=>acc+curr,0); //n*(n+1)/2 sum of an arithmetic series
