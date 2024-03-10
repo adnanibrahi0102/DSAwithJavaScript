@@ -35,7 +35,8 @@ function countNumberOfDigits(num) {
   return count;
 }
 
-// console.log(countNumberOfDigits(1213));
+
+console.log(countNumberOfDigits(1213));
 
 //question 4: find the palindrome of a number
 
@@ -44,13 +45,13 @@ const isPalindrome=(num)=>{
     let reversedNumber=0;
 
     while(num>0){
-        const digit=num%10 ; //removes last digit from num
+        const digit=num%10 ; //removes last digit from num 
         reversedNumber=reversedNumber*10+digit; //Adds calculation to the ones place of reversedNumber.
         num=Math.floor(num/10);//Removes the last digit from number.
     }
     return originalNumber==reversedNumber;
 }
-// console.log(isPalindrome(121))
+console.log(isPalindrome(222))
 
 
 // question 5:Fibbonacci series
@@ -70,27 +71,27 @@ function fibonacci(num){
    }
    return next;
 }
-console.log(fibonacci(150))
+// console.log(fibonacci(150))
 
-// const fibb=(num)=>{
-//   if(num<2){
-//     return num;
-//   }
-//   let prev=0;
-//   let current=1;
-//   let next;
-//   let i=2;
+const fibb=(num)=>{
+  if(num<2){
+    return num;
+  }
+  let prev=0;
+  let current=1;
+  let next;
+  let i=2;
 
-//   while(i<=num){
-//     next =prev +current;
-//     prev=current;
-//     current=next;
-//     i++;
-//   }
-//   return next;
-// }
+  while(i<=num){
+    next =prev +current;
+    prev=current;
+    current=next;
+    i++;
+  }
+  return next;
+}
 
-// console.log(fibb(6))
+console.log(fibb(4))
 const num=[1,2,3,5];
 function findMissingNumber(num){
   let sum=0;
