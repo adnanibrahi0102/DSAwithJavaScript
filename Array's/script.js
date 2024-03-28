@@ -197,12 +197,36 @@ const arr1 = [1, 1, 2, 2, 4, 2, 5, 2, 4, 6, 7, 8, 10];
 
 
 
-
 // Rotate the elements of an array to the left or right by a given number of steps.
-const rotation_of_array = (array, steps) => {
-  const rotations = steps % array.length;
-  const rotated_array = array.slice(rotations).concat(array.slice(0, rotations));
-  return rotated_array;
+const rotationOfArray=(arr,steps)=>{
+  const rotations = steps % arr.length;
+  const rotatedArray=arr.slice(rotations).concat(arr.slice(0,rotations));
+  return rotatedArray;
 }
-const array1 = [1, 2, 3, 4, 5, 6, 7];
-// console.log(rotation_of_array(array1,3))
+
+const array1=[1,2,3,45,2,6,7];
+// console.log(rotationOfArray(array1,3))
+
+//Sort the elements of an array in ascending or descending order.
+
+const sortArray=(arr)=>{
+ const sorted= arr.sort((a,b)=>a-b);
+ return sorted;
+}
+// console.log(sortArray([1,2,4,51,23]));
+
+const bubbleSort=(arr)=>{
+  for(let i =0 ;i<arr.length-1;i++){
+    for(let j=0 ;j<arr.length-i-1;j++){
+      if(arr[j]>arr[j+1]){
+        //swapping
+        let temp=arr[j];
+        arr[j]=arr[j+1];
+        arr[j+1]=temp;
+      }
+    }
+  }
+  return arr;
+}
+
+// console.log(bubbleSort([2,4,1,0,5,3]))
