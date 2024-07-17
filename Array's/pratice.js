@@ -95,3 +95,9 @@ function isArrayEqual(array1, array2) {
     }
     return true;
 }
+
+// 5. How to sort an array in ascending order using the `sort` method?
+
+const array = [1,4,27,5,9,6,10];
+array.sort((a , b)=>a - b)
+console.log(array)
