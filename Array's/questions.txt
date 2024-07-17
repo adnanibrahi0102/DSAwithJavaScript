@@ -1,0 +1,19 @@
+
+1. How to find if a target element exists in an array using a custom function?
+2. How to find the index of a target element in an array using a custom function?
+3. How to remove elements from an array using the `splice` method?
+4. How to check if two arrays are equal using a custom function?
+5. How to sort an array in ascending order using the `sort` method?
+6. How to sort an array in descending order using the `sort` method with a custom comparator function?
+7. How to create a new array by filtering elements based on a condition?
+8. How to find two indices in an array that sum up to a target value using a custom function?
+9. How to find the sum of all elements in an array using a custom function?
+10. How to find the product of all elements in an array using a custom function?
+11. How to find the maximum element in an array using a custom function?
+12. How to find the minimum element in an array using a custom function?
+13. How to calculate the average of all elements in an array using a custom function?
+14. How to reverse the elements of an array using a custom function?
+15. How to remove duplicates from an array and return a new array with unique elements using a custom function?
+16. How to rotate the elements of an array to the left or right by a given number of steps using a custom function?
+17. How to sort the elements of an array in ascending order using a custom function?
+18. How to implement the bubble sort algorithm in JavaScript?
